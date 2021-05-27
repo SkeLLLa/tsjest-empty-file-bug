@@ -1,0 +1,24 @@
+{
+  "name": "tsjest-repro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "pretest": "npm run build",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^27.0.1",
+    "ts-jest": "^27.0.0",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.2.4"
+  },
+  "devDependencies": {
+    "@jest/globals": "^27.0.1",
+    "jest-environment-node": "^27.0.1"
+  }
+}

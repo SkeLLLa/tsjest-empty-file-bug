@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "composite": false, // false as this causes looker-test-kit build error: Projects must list all "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "lib": ["ESNext"], // to use latest language features
+    "noEmitOnError": true,
+    "noImplicitAny": false, // we have a lot of code without type definition, including dependencies like migrate-mongo, TODO: enable it later
+    "rootDir": "./",
+    "outDir": "./dist/",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "target": "ES2019",
+    "esModuleInterop": true
+  },
+  "include": ["src", "*.ts", "**/__test__/*", "__test__/unit/add.spec.ts"],
+  "exclude": ["**/__mocks__/*"],
+}
